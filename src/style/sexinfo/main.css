@@ -1,0 +1,49 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    user-select: none;
+}
+
+
+.sexinfo_content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    font-family:  Consolas, source-code-pro, monospace;
+    text-align: center;
+    background-color: #2d1624;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.sexinfo_content h1 {
+    color: #fd7463;
+    letter-spacing: 5px;
+}
+
+
+.sexinfo_content p {
+    padding: 0px 20vw;
+    color: #fc4665
+}
+
+
+.sexinfo_content .sexinfo_game {
+    margin-top: 50px;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.sexinfo_game .window {
+    width: 288px;
+    height: 512px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fd7463;
+    background-color:  white;
+    border-radius: 20px;
+}
+
