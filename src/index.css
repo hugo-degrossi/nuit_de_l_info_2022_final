@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'ransomnote';
+  src: url('fonts/rans____-webfont.woff2') format('woff2'),
+  url('fonts/rans____-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}

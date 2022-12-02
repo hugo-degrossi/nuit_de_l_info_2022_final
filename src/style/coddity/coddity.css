@@ -1,0 +1,114 @@
+.coddity_content {
+    font-family: 'ransomnote', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+}
+.coddity_content h1 {
+    font-size: 40px;
+}
+.coddity_content.brown{
+color: #5d3a00;
+}
+
+.coddity_content.turquoise{
+color: #6adcd3;
+}
+
+.coddity_content.purple{
+color: #6321d4;
+}
+
+.coddity_content.olive{
+color: #bfab25;
+}
+
+.coddity_content.pink{
+color: #fe72b8;
+}
+
+.circle {
+    max-width: 100px;
+    margin: 30px;
+    font-size: 25px;
+    animation: slide 5s infinite;
+    animation: slide 2s cubic-bezier(0.075, 0.82, 0.165, 1) infinite;
+}
+
+#circle1 {
+    top: 30%;
+    background-color: #6adcd3;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(.17, .67, .38, 1.19);
+}
+
+#circle2 {
+    background-color: #6321d4;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+#circle3 {
+    background-color: #fe72b8;
+    animation-duration: 16s;
+    animation-timing-function: cubic-bezier(.17, .67, 1, -0.38);
+}
+
+#circle4 {
+    background-color: yellow;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(.17, .67, 0.1, 4);
+}
+
+#circle5 {
+    background-color: red;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(400px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+:root {
+    --g1: rgb(56, 97, 80);
+    --g2: rgb(226, 173, 242);
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
+div.coddity_content {
+    animation: background-pan 10s linear infinite;
+    background: linear-gradient(
+            to right,
+            var(--g1),
+            var(--g2),
+            var(--g1)
+    );
+    background-size: 200%;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.centered {
+    left: 50%;
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+}
